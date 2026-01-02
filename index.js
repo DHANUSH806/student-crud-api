@@ -2,11 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// IMPORTANT: This line fixes your error. 
-// It tells the server how to read JSON data.
 app.use(express.json());
 
-// 1. DATA STORAGE (Our Student Database)
+// 1. DATA STORAGE ( Student Database)
 let students = [
     { id: 1, name: "Dhanush", dept: "CSE", age: 19 },
     { id: 2, name: "Titan", dept: "ECE", age: 20 }
